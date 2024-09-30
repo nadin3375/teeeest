@@ -32,7 +32,7 @@ var attention_check_thresh = 0.65
 var sumInstructTime = 0 //ms
 var instructTimeThresh = 0 ///in seconds
 
-var path = '/static/experiments/ravens/images/'
+var path = '/images/'
 var prefix = '<div><img src = "'
 var bottom_id = '" id="bottom_img'
 var postfix = '"</img></div>'
@@ -285,7 +285,7 @@ var instructions_block = {
   type: 'poldrack-instructions',
   pages: [
     '<div class = centerbox><p class = block-text>이 테스트는 관찰력, 집중력, 사고력을 평가하는 시험이며 18개 문제로 이루어져 있습니다. 각 문제에는 일정한 패턴을 가진 그림이 제시되어 있습니다. 여러분의 역할은 패턴을 파악하여 빈칸을 완성하는 것입니다. 8가지 선택지 중에서 빈칸에 들어갈 그림으로 적절한 것을 고르세요.<br><br>‘Next’ 버튼을 누르면 예시 문제가 제시됩니다.</p></div>',
-    '<div class = centerbox><p class = block-text><strong>예시 문제의 패턴을 살펴봅시다.</strong> 행(가로)을 따라가면 선의 개수가 동일합니다. 열(세로)을 따라가면 사각형의 개수가 동일합니다.<div class="sample_img"><img src = "/static/experiments/ravens/images/practice/sample_matrix_top.jpg"</img></div><p class= "block-text"><strong>예시 문제의 선택지를 살펴봅시다.</strong> 빈칸에 들어갈 가장 적절한 답은 ‘E’입니다.</p><div class="sample_img"><img src = "/static/experiments/ravens/images/practice/sample_matrix_bottom.jpg" id="bottom_img"</img></div><div class="sample_img"><img src = "/static/experiments/ravens/images/practice/Opt_E_selected.png"</img></div></p></div>',
+    '<div class = centerbox><p class = block-text><strong>예시 문제의 패턴을 살펴봅시다.</strong> 행(가로)을 따라가면 선의 개수가 동일합니다. 열(세로)을 따라가면 사각형의 개수가 동일합니다.<div class="sample_img"><img src = "/images/practice/sample_matrix_top.jpg"</img></div><p class= "block-text"><strong>예시 문제의 선택지를 살펴봅시다.</strong> 빈칸에 들어갈 가장 적절한 답은 ‘E’입니다.</p><div class="sample_img"><img src = "/images/practice/sample_matrix_bottom.jpg" id="bottom_img"</img></div><div class="sample_img"><img src = "/static/experiments/ravens/images/practice/Opt_E_selected.png"</img></div></p></div>',
     '<div class = centerbox><p class = center-block-text>이제 다음 페이지에서는 연습 문제 2개를 풀어보겠습니다. 연습 문제에는 정답/오답 여부가 제시되며, 다시 풀 수 있습니다. 실제 문제에는 정답/오답 여부가 제시되지 않습니다.</p></div>'
   ],
   allow_keys: false,
@@ -343,7 +343,7 @@ var practice_block_1 = {
   preamble: '',
   pages: [
     [
-      '<div><img src = "/static/experiments/ravens/images/practice/practice_top_1.jpg"</img></div><div><img src = "/static/experiments/ravens/images/practice/practice_bottom_1.jpg" id="bottom_img"</img></div>'
+      '<div><img src = "/images/practice/practice_top_1.jpg"</img></div><div><img src = "/images/practice/practice_bottom_1.jpg" id="bottom_img"</img></div>'
     ]
   ],
   options: [
@@ -406,7 +406,8 @@ var practice_block_2 = {
   preamble: '',
   pages: [
     [
-      '<div><img src = "/static/experiments/ravens/images/practice/practice_top_2.jpg"</img></div><div><img src = "/static/experiments/ravens/images/practice/practice_bottom_2.jpg" id="bottom_img"</img></div>'
+      '<div><img src = "images/practice/practice_top_2.jpg"</img></div><div><img src = "
+      images/practice/practice_bottom_2.jpg" id="bottom_img"</img></div>'
     ]
   ],
   options: [
